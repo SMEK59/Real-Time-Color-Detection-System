@@ -1,2 +1,35 @@
 # Real-Time-Color-Detection-System
-The Real-Time Color Detection System captures live video from a camera and identifies the color of the pixel at the center of the frame. It displays the detected color and its BGR values on the video feed. This tool is useful for applications that need real-time color recognition.
+
+The Real-Time Color Detection System captures video from your webcam, analyzes the color of the pixel at the center of each frame, and displays the detected color name in real-time
+
+## Working
+
+**1. Open Webcam :**
+
+   - The application tries to connect to the webcam by checking up to three possible video sources.
+
+**2. Capture and Process Frames :**
+
+   - Continuously captures frames from the webcam.
+     
+   - Converts each frame to HSV color space to get accurate color information.
+     
+   - Determines the color of the pixel in the center of the frame.
+
+**3. Display Color :**
+
+   - Shows the name of the detected color on the screen.
+     
+   - Draws a circle at the center of the frame to highlight it.
+
+**4. Exit :**
+
+   - Closes the video feed and windows when the "ESC" key is pressed.
+
+## Build With
+
+**1. Python -** The programming language used.
+
+**2. OpenCV (cv2) -**: A library for computer vision tasks, used here for video capture, image processing, and display.
+
+**3. NumPy -**: A library for numerical operations (though not explicitly used in this snippet, it’s often used with OpenCV).
